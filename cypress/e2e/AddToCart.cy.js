@@ -22,7 +22,7 @@ it('Add to cart', () => {
     )
     cy.get('.content > a').click()
     
-    cy.get('#open-estimate-shipping-popup').
+    cy.get('#open-estimate-shipping-popup')
     
     /*cy.get('.product-subtotal').then(elem=>{
         const price = parseFloat(elem.text().split('$')[1])
