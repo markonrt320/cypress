@@ -3,7 +3,7 @@ describe('template spec', () => {
       cy.visit('/')
       cy.viewport(1600,900)
     })
-    it.only('Register with already registered credentials', () => {
+    it('Register with already registered credentials', () => {
         cy.get('.ico-register').click()
         cy.get('#gender-male').click() 
         cy.get('#FirstName').type('John')
@@ -17,7 +17,7 @@ describe('template spec', () => {
 
         cy.get('.message-error > ul > li').should('have.text','The specified email already exists')
     })
-    it.skip('Register with right credentials', () => {
+    it('Register with right credentials', () => {
         cy.get('.ico-register').click()
         cy.get('#gender-male').click() 
         cy.get('#FirstName').type('Eve')
@@ -31,7 +31,7 @@ describe('template spec', () => {
         
         cy.get('.message-error > ul > li').should('have.text','Your registration completed')
     })
-    it.skip('Register with valid username and mail but invalid password', () => {
+    it('Register with valid username and mail but invalid password', () => {
         cy.get('.ico-register').click()
         cy.get('#gender-male').click() 
         cy.get('#FirstName').type('Eve')

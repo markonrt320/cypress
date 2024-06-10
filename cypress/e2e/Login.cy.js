@@ -20,7 +20,7 @@ it('Login with wrong email', ()=>{
 
     cy.get('form > .buttons > .button-1').click()
 
-    cy.get('#Email-error').should('have.text', 'Wrong email')
+    cy.get('.message-error').should('contain.text', 'Login was unsuccessful')
 })
 it('Login with invalid email', ()=>{
     cy.get('.ico-login').click()
