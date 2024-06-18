@@ -16,7 +16,7 @@ describe('template spec', () => {
         cy.get('.remove-product').children().should('have.length', 3)
 
     })
-    it.only('Remove from compare', () => {
+    it('Remove from compare', () => {
       cy.get(':nth-child(1) > .product-item > .details > .add-info > .buttons > .add-to-compare-list-button').click()
       cy.get('.bar-notification .content').should('contain.text', 'The product has been added to your product comparison')
       cy.wait(1000)

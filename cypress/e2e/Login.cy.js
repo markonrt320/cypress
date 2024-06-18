@@ -4,10 +4,15 @@ describe('Login', ()=>{
         cy.viewport(1600,900)
       })
 
-it('Login with right credentials', () => {
+it.only('Login with right credentials', () => {
     cy.get('.ico-login').click()
-    cy.get('#Email').type('johndoe@gm.com')
-    cy.get('#Password').type('P@ssw0rd')
+
+    cy.fixture('example').then(
+        data=>{
+            cy.get('#Email').type(data.email)
+            cy.get('#Password').type(data.password)
+        }
+    )
 
     cy.get('form > .buttons > .button-1').click()
 

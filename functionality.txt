@@ -1,9 +1,7 @@
 Functionality: Search Functionality
 Scenario 1: Verify that the search bar displays relevant products when a keyword is entered and the search button is clicked.
 
-Functionality: Filter Products
-Scenario 1: Verify that products can be filtered by price.
-Scenario 2: Verify that products can be filtered by category.
+----------------------------------------------------------------------------------------------
 
 Functionality: Sort Products
 Scenario 1: Verify that products can be sorted by "Price: Low to High."
@@ -11,9 +9,13 @@ Scenario 2: Verify that products can be sorted by "Price: High to Low."
 Scenario 3: Verify that products can be sorted by "Name: A to Z."
 Scenario 4: Verify that products can be sorted by "Name: Z to A."
 
+----------------------------------------------------------------------------------------------
+
 Functionality: Add to Cart
 Scenario 1: Verify that a product can be added to the cart from the product listing page.
 Scenario 2: Verify that a product can be added to the cart from the product details page.
+
+--------------------------------------------------------------------------------------------
 
 Functionality: View Cart
 Scenario 1: Verify that the cart page displays the correct product, quantity, and price.
