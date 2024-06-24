@@ -1,3 +1,5 @@
+import 'cypress-iframe'
+
 describe('Login', ()=>{
     beforeEach(()=>{
         cy.visit('/')
@@ -22,7 +24,8 @@ it('Add to cart', () => {
     )
     cy.get('.content > a').click()
     
-    cy.get('#open-estimate-shipping-popup')
+    cy.get('#open-estimate-shipping-popup').click()
+    cy.iframe('.aut-iframe')
     
     /*cy.get('.product-subtotal').then(elem=>{
         const price = parseFloat(elem.text().split('$')[1])
