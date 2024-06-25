@@ -1,6 +1,6 @@
 Functionality: Search Functionality
 Scenario 1: Verify that the search bar displays relevant products when a keyword is entered and the search button is clicked.
-
+Test case - Verify that the displayed products contains inputed text.
 ----------------------------------------------------------------------------------------------
 
 Functionality: Sort Products
