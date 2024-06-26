@@ -1,5 +1,3 @@
-import 'cypress-iframe'
-
 describe('Login', ()=>{
     before(()=>{
         cy.viewport(1600,900)
@@ -64,7 +62,15 @@ it('Add to cart', () => {
 
     cy.url().should('equal','https://demo.nopcommerce.com/onepagecheckout#opc-billing')
 
-    
+    cy.get('#BillingNewAddress_City').invoke('val').then(input=>{
+        if(input==""){
+            cy.get('#BillingNewAddress_City').type('Belgrade')
+            cy.get('#BillingNewAddress_CountryId').select("Serbia")
+            cy.get('#BillingNewAddress_Address1').type('Dummy Adress')
+            cy.get('#BillingNewAddress_ZipPostalCode').type('11000')
+            cy.get('#BillingNewAddress_PhoneNumber').type('3838823323')
+        }
+    })
 
     cy.get('#billing-buttons-container > .new-address-next-step-button').click()
     
@@ -91,14 +97,15 @@ it('Add to cart', () => {
 
     cy.wait(1000)
 
+
+
     cy.get('#confirm-order-buttons-container > .button-1').click()
 
+    cy.get('.order-number > strong').then(elem=>{
+        var text = elem.text().split(': ')[1]
+    })
     cy.get('.section > .title > strong').should('have.text', 'Your order has been successfully processed!')
 
     cy.get('.buttons > .button-1').click()
-    })
-
-    it('Check My account orders', ()=>{
-        /**/
     })
 })
