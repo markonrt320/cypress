@@ -37,6 +37,9 @@ class Register{
     rightCred(){
         return cy.get('.message-error > ul > li').should('have.text','Your registration completed')
     }
+    invalidPass(){
+        return cy.get('.field-validation-error').should('have.text','Password must meet the following rules: must have at least 6 characters and not greater than 64 characters')
+    }
 }
 
 export default Register

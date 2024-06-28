@@ -1,46 +1,9 @@
-Functionality: Search Functionality
-Scenario 1: Verify that the search bar displays relevant products when a keyword is entered and the search button is clicked.
-Test case - Verify that the displayed products contains inputed text.
-----------------------------------------------------------------------------------------------
-
-Functionality: Sort Products
-Scenario 1: Verify that products can be sorted by "Price: Low to High."
-Scenario 2: Verify that products can be sorted by "Price: High to Low."
-Scenario 3: Verify that products can be sorted by "Name: A to Z."
-Scenario 4: Verify that products can be sorted by "Name: Z to A."
-
-----------------------------------------------------------------------------------------------
-
-Functionality: Add to Cart
-Scenario 1: Verify that a product can be added to the cart from the product listing page.
-Scenario 2: Verify that a product can be added to the cart from the product details page.
-
---------------------------------------------------------------------------------------------
-
-Functionality: View Cart
-Scenario 1: Verify that the cart page displays the correct product, quantity, and price.
-
-Functionality: Update Cart
-Scenario 1: Verify that the quantity of a product in the cart can be updated and the total price is adjusted accordingly.
-
-Functionality: Remove from Cart
-Scenario 1: Verify that a product can be removed from the cart and the cart is updated correctly.
-
-Functionality: Proceed to Checkout
-Scenario 1: Verify that the checkout process can be completed successfully by filling in all required information.
-
 Functionality: Wishlist
 Scenario 1: Verify that a product can be added to the wishlist.
 Scenario 2: Verify that the wishlist page displays the added products correctly.
-
-Functionality: Product Reviews
-Scenario 1: Verify that a product review can be submitted and is displayed correctly on the product page.
 
 Functionality: Product Details
 Scenario 1: Verify that the product details page displays correct information about the product.
 
 Functionality: Product Images
 Scenario 1: Verify that product images can be viewed in a larger view when clicked.
-
-Functionality: Pagination
-Scenario 1: Verify that the product listing page correctly paginates and displays products on the next page when the pagination link is clicked.

@@ -13,7 +13,11 @@ it('Verify input functionality', () => {
     cy.get('#uploaded-files').should('contain.text', 'file1.pdf')
     
 })
-it.only('Verify input functionality - drag n drop', () => {
+it('Verify input functionality - drag n drop', () => {
+    cy.get('#drag-drop-upload').attachFile('file1.pdf', { subjectType: 'drag-n-drop' })
+    cy.get('#drag-drop-upload').should('contain.text', 'file1.pdf')
+})
+it('Change name of file - drag n drop', () => {
     cy.get('#drag-drop-upload').attachFile('file1.pdf', { subjectType: 'drag-n-drop' })
     cy.get('#drag-drop-upload').should('contain.text', 'file1.pdf')
 })
